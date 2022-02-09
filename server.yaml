@@ -1,0 +1,12 @@
+severs:
+  -
+    host: 地址
+    port: 端口
+    username: 账号
+    password: 密码
+    readyTimeout: 5000
+    name: 服务器名称
+command:
+    cpu: cat /proc/cpuinfo
+    memory: cat /proc/meminfo
+    loadavg: cat /proc/loadavg

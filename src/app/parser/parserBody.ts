@@ -42,7 +42,6 @@ export const writeBody =
   (writer: BodyWriter): Middleware =>
   async (context, next) => {
     const data = context.state.data;
-
     if (data) {
       try {
         context.body = Buffer.from(writer(data));
